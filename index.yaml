@@ -9,6 +9,6 @@ entries:
     name: pineapple
     type: application
     urls:
-    - pineapple-0.1.0.tgz
+    - pineapple-0.1.15.tgz
     version: 0.1.15
 generated: "2025-08-28T06:59:48.019032054Z"
