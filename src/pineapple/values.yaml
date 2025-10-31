@@ -2,9 +2,9 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: hello-world
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
