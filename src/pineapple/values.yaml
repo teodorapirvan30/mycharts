@@ -18,9 +18,25 @@ serviceAccount:
 
 podAnnotations: {}
 podLabels: {}
-podSecurityContext: {}
+# Pod-level securityContext applied to `spec.securityContext`.
+# Setting a seccompProfile at the pod level helps satisfy PodSecurity "restricted".
+podSecurityContext:
+  seccompProfile:
+    type: RuntimeDefault
 
-securityContext: {}
+# Container-level securityContext applied to each container. The PodSecurity
+# policy requires allowPrivilegeEscalation=false and a seccompProfile set on
+# the container or pod.
+securityContext:
+  allowPrivilegeEscalation: false
+  seccompProfile:
+    type: RuntimeDefault
+#  capabilities:
+#    drop:
+#      - ALL
+#  readOnlyRootFilesystem: true
+#  runAsNonRoot: true
+#  runAsUser: 1000
 #  capabilities:
 #    drop:
 #      - ALL
