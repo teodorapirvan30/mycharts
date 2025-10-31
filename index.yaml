@@ -11,14 +11,4 @@ entries:
     urls:
     - https://teodorapirvan30.github.io/mycharts/pineapple-0.1.17.tgz
     version: 0.1.17
-  - apiVersion: v2
-    appVersion: 1.31.0
-    created: "2025-10-31T09:17:34.560904813Z"
-    description: A Helm chart for Kubernetes
-    digest: e776b34222429cdeb0c6cfa732c74b8e701dd70d444be0842204038583539381
-    name: pineapple
-    type: application
-    urls:
-    - https://teodorapirvan30.github.io/mycharts/pineapple-0.1.16.tgz
-    version: 0.1.16
 generated: "2025-10-31T09:17:34.560296875Z"
